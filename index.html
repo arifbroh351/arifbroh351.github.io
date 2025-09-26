@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arif Broh</title>
+  <title>Arif Broh Portfolio</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,74 +11,93 @@
   <!-- Bootstrap CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Custom Styles -->
   <style>
     body {
       background-color: #0f172a; /* dark background */
-      color: white;
+      color: #f8f8f8;
+      font-family: 'Segoe UI', sans-serif;
     }
     .tech-badge {
       margin: 4px;
     }
     .social-icons img {
-      width: 48px; /* increased size */
-      height: 48px; /* increased size */
+      width: 48px;
+      height: 48px;
       margin: 5px;
+      transition: transform 0.3s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
     }
     footer {
       border-top: 1px solid #374151;
     }
+    .typing-svg-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .hero-img {
+      border: 4px solid #6366f1; 
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
   </style>
 </head>
-<body class="font-sans">
+<body>
 
   <!-- Hero Section -->
-  <section class="text-center py-10">
-    <!-- Profile Image -->
-    <img class="mx-auto w-40 h-40 rounded-full border-4 border-indigo-500 shadow-lg mb-4" 
+  <section class="text-center py-12 px-4">
+    <img class="mx-auto w-40 h-40 rounded-full hero-img mb-4" 
          src="https://avatars.githubusercontent.com/u/222481752?s=400&u=67ca116585fc84dc9770b4ea33942b4e7e2a3daf&v=4" 
          alt="Arif Broh">
-         
-    <h1 class="text-4xl font-bold mb-4">Hi there 👋</h1>
-    <p class="text-lg mb-4"><b><terminal>🔴 🟡 🟢</terminal></b></p>
-    <a href="">
-      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=CC2020&background=&random=false&width=435&lines=IM+ARIF-BROH+I'M+HERE++%F0%9F%A7%90;YES+IM+%7B%F0%9F%98%8A-%F0%9F%91%8B-%F0%9F%98%A9-%F0%9F%98%97-%E2%98%BA-%F0%9F%98%89-%F0%9F%98%AC-%F0%9F%A5%B6-%F0%9F%A7%90%7D" alt="Typing SVG">
-    </a>
-    <h3 class="text-xl mt-4">A passionate frontend developer from Bangladesh</h3>
-    <img class="mx-auto mt-4 rounded-lg shadow-lg" src="https://b.top4top.io/p_2835y06rp0.gif" alt="Coding" width="400">
+    <h1 class="text-5xl font-bold mb-2">Hi there 👋</h1>
+    <p class="text-lg text-indigo-400 mb-4">A passionate frontend developer from Bangladesh</p>
+
+    <!-- Centered Typing SVG -->
+    <div class="typing-svg-wrapper">
+      <a href="https://git.io/typing-svg">
+        <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=CC2020&background=&random=false&width=435&lines=IM+ARIF-BROH+I'M+HERE++%F0%9F%A7%90;YES+IM+%7B%F0%9F%98%8A-%F0%9F%91%8B-%F0%9F%98%A9-%F0%9F%98%97-%E2%98%BA-%F0%9F%98%89-%F0%9F%98%AC-%F0%9F%A5%B6-%F0%9F%A7%90%7D" alt="Typing SVG">
+      </a>
+    </div>
+
+    <img class="mx-auto mt-6 rounded-lg shadow-lg w-96" src="https://b.top4top.io/p_2835y06rp0.gif" alt="Coding">
   </section>
 
   <!-- About Section -->
   <section class="container mx-auto px-5 py-10">
-    <ul class="list-disc list-inside space-y-2 text-lg">
-      <li>🔭 I’m currently working on web/app development project</li>
+    <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+    <ul class="list-disc list-inside space-y-2 text-lg max-w-3xl mx-auto">
+      <li>🔭 I’m currently working on web/app development projects</li>
       <li>🌱 I’m currently learning PHP, Java, HTML</li>
-      <li>👯 I’m looking to collaborate on ...</li>
-      <li>🤔 I’m looking for help with ...</li>
-      <li>💬 Ask me about ...</li>
-      <li>📫 How to reach me: github <a href="https://github.com/arifbroh351" class="text-blue-400">Arifbroh351</a></li>
+      <li>👯 I’m looking to collaborate on exciting projects</li>
+      <li>🤔 I’m looking for help with advanced web development topics</li>
+      <li>💬 Ask me about anything related to Frontend & Backend</li>
+      <li>📫 How to reach me: <a href="https://github.com/arifbroh351" class="text-indigo-400">GitHub: Arifbroh351</a></li>
       <li>😄 Pronouns: He/Him</li>
       <li>⚡ Fun fact: I'm Hukar</li>
     </ul>
   </section>
 
   <!-- Social Section -->
-  <section class="container mx-auto px-5 py-5 text-center social-icons">
-    <a href="https://facebook.com/arifbroh351"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white" alt="Facebook"></a>
-    <a href="https://instagram.com/arifbroh351"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white" alt="Instagram"></a>
-    <a href="https://linkedin.com/in/arifbroh351"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-    <a href="https://pinterest.com/arifbroh351"><img src="https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white" alt="Pinterest"></a>
-    <a href="https://quora.com/profile/arifbroh351"><img src="https://img.shields.io/badge/Quora-%23B92B27.svg?logo=Quora&logoColor=white" alt="Quora"></a>
-    <a href="https://reddit.com/user/arifbroh351"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white" alt="Reddit"></a>
-    <a href="https://tiktok.com/@arifbroh351"><img src="https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white" alt="TikTok"></a>
-    <a href="https://x.com/arifbroh351"><img src="https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white" alt="X"></a>
-    <a href="https://youtube.com/@arifbroh351"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white" alt="YouTube"></a>
-    <a href="mailto:arifbroh351@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"></a>
+  <section class="container mx-auto px-5 py-10 text-center social-icons">
+    <h2 class="text-3xl font-bold mb-6">Connect With Me</h2>
+    <div class="flex justify-center flex-wrap">
+      <a href="https://facebook.com/arifbroh351"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white" alt="Facebook"></a>
+      <a href="https://instagram.com/arifbroh351"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white" alt="Instagram"></a>
+      <a href="https://linkedin.com/in/arifbroh351"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+      <a href="https://pinterest.com/arifbroh351"><img src="https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white" alt="Pinterest"></a>
+      <a href="https://quora.com/profile/arifbroh351"><img src="https://img.shields.io/badge/Quora-%23B92B27.svg?logo=Quora&logoColor=white" alt="Quora"></a>
+      <a href="https://reddit.com/user/arifbroh351"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white" alt="Reddit"></a>
+      <a href="https://tiktok.com/@arifbroh351"><img src="https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white" alt="TikTok"></a>
+      <a href="https://x.com/arifbroh351"><img src="https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white" alt="X"></a>
+      <a href="https://youtube.com/@arifbroh351"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white" alt="YouTube"></a>
+      <a href="mailto:arifbroh351@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email"></a>
+    </div>
   </section>
 
   <!-- Tech Stack Section -->
   <section class="container mx-auto px-5 py-10 text-center">
-    <h2 class="text-2xl font-bold mb-4">💻 Tech Stack</h2>
+    <h2 class="text-3xl font-bold mb-6">💻 Tech Stack</h2>
     <div class="flex flex-wrap justify-center">
       <img class="tech-badge" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
       <img class="tech-badge" src="https://img.shields.io/badge/php-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
